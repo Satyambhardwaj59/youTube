@@ -1,0 +1,25 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "description": "Build YouTube Clone project",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Satyambhardwaj59/youTube.git"
+  },
+  "author": "Satyam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Satyambhardwaj59/youTube/issues"
+  },
+  "homepage": "https://github.com/Satyambhardwaj59/youTube#readme",
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "browserslist": [
+    "last 2 versions"
+  ]
+}
