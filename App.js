@@ -1,15 +1,18 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import Try from "./src/Try";
 import Head from "./src/components/Head";
 import Body from "./src/components/Body";
+import { Provider } from "react-redux";
+import store from "./src/utils/store";
 
 const App = () => {
     return(
-        <div>
-            <Head />
-            <Body />
-        </div>
+        <Provider store={store}>
+            <div>
+                <Head />
+                <Body />
+            </div>
+        </Provider>
     )
 }
 
