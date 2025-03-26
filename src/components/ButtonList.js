@@ -1,12 +1,13 @@
 import React from 'react';
 import Button from './Button';
 
-const btnArr = ["All", "Music", "Mixes", "T-Series", "React", "JavaScript", "Movie", "Interview", "Comedy", "Tech", "Science", "Sports"];
+const btnArr = ["All", "Music", "Mixes"];
 
 const ButtonList = () => {
+
   return (
     <div className='flex'>
-      {btnArr.map((btn, index) => <Button key={index} name={btn} />)}
+       {btnArr.map((btn, index) => <Button key={index} name={btn}/>)}
     </div>
   )
 }

@@ -10,7 +10,7 @@ const Sidebar = () => {
 
   if(!isMenuOpen) return null;
   return (
-      <div className='p-5 shadow-xl w-48'>
+      <div className='p-5 shadow-xl '>
         <div>
           <ul>
             <li>Home</li>
