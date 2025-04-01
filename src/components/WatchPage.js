@@ -21,4 +21,6 @@ const WatchPage = () => {
   )
 }
 
-export default WatchPage
+
+
+export default WatchPage;

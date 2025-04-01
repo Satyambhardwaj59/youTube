@@ -16,4 +16,10 @@ const VideoCart = ({info}) => {
   )
 }
 
+export const AdVideoCard = ({info}) => {
+  return (
+    <div className='m-1 p-1 border border-lime-800'><VideoCart info={info}/></div>
+  )
+}
+
 export default VideoCart;
