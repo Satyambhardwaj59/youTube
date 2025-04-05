@@ -9,7 +9,7 @@ const VideoCart = ({info}) => {
                     <li className='font-semibold'>{info?.snippet?.title}</li>
                     <li className='text-gray-900'>{info?.snippet?.channelTitle}</li>
                     <li className='text-gray-700'>{info?.snippet?.publishedAt}</li>
-                    <li className='text-gray-700'>{info?.statistics?.viewCount} views</li>
+                    <li className='text-gray-700'>{ Math.round(info?.statistics?.viewCount / 1000)} k views</li>
                 </ul>
       
      </div>
@@ -18,7 +18,10 @@ const VideoCart = ({info}) => {
 
 export const AdVideoCard = ({info}) => {
   return (
-    <div className='m-1 p-1 border border-lime-800'><VideoCart info={info}/></div>
+    <div className='m-1 p-1 border border-lime-800 rounded-lg'>
+      <span className='px-4 rounded-lg bg-blue-900 text-white'>* Ad</span>
+      <VideoCart info={info}/>
+    </div>
   )
 }
 
