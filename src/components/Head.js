@@ -2,7 +2,7 @@ import React, { useEffect, useState }  from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { toggleMenu } from '../utils/AppSlice';
 import { Link } from 'react-router';
-import { YOUTUBE_SEARCH_API } from '../utils/Constents';
+import { USER_ICON, YOUTUBE_SEARCH_API } from '../utils/Constents';
 import { cacheResults } from '../utils/searchSlice';
 
 const Head = () => {
@@ -82,7 +82,7 @@ const Head = () => {
         </div>
         
         <div className='col-span-1'>
-            <img className='h-10' src="https://t4.ftcdn.net/jpg/02/29/75/83/360_F_229758328_7x8jwCwjtBMmC6rgFzLFhZoEpLobB6L8.jpg" alt="user-icon" />
+            <img className='h-10' src={USER_ICON} alt="user-icon" />
         </div>
 
     </div>
