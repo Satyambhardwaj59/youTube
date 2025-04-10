@@ -3,6 +3,7 @@ import { YOUTUBE_VIDEO_API } from './../utils/Constents';
 import VideoCart from './VideoCart';
 import { Link } from 'react-router';
 import { AdVideoCard } from './VideoCart';
+import Shimmar from './Shimmar';
 
 const VideoContainer = () => {
 
@@ -20,7 +21,7 @@ const VideoContainer = () => {
     
     
   }
-  return (
+  return videos.length === 0 ? <Shimmar/> :  (
     
     
     <div className='flex flex-wrap justify-center'>

@@ -2,7 +2,7 @@ import React, { useEffect, useState }  from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { toggleMenu } from '../utils/AppSlice';
 import { Link } from 'react-router';
-import { USER_ICON, YOUTUBE_SEARCH_API } from '../utils/Constents';
+import { USER_ICON, YOUTUBE_SEARCH_API, BELL_ICON } from '../utils/Constents';
 import { cacheResults } from '../utils/searchSlice';
 
 const Head = () => {
@@ -73,7 +73,7 @@ const Head = () => {
               <button className='border-gray-300 bg-gray-200 p-1 rounded-full text-3xl ml-10'>🎙️</button>
 
             </div>
-          {showSuggestions && <div className=' absolute bg-white shadow-lg  mt-10 rounded-lg top-12 px-6 py-2 w-3/8 ml-52'>
+          {showSuggestions && <div className=' absolute bg-white shadow-lg  mt-10 rounded-lg top-12 px-6 py-2 w-3/8 ml-44'>
             <ul className=' items-center'>
               {suggestions.map((sug) =><li key={sug} className='py-3 shadow-sm hover:bg-gray-100'><span className='text-gray-300 px-2 text-xl'>🔍︎</span>{sug} </li>)}
               
@@ -81,7 +81,9 @@ const Head = () => {
           </div>}
         </div>
         
-        <div className='col-span-1'>
+        <div className='col-span-1 flex justify-center items-center '>
+          <button className='border-gray-300 bg-gray-200 py-1 px-2 rounded-full text-xl'> + Create</button>
+          <img className='h-8 mx-8' src={BELL_ICON} />
             <img className='h-10' src={USER_ICON} alt="user-icon" />
         </div>
 
