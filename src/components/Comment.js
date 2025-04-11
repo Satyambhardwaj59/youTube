@@ -4,7 +4,6 @@ import { LIKE_ICON, USER_ICON, DISLIKE_ICON } from './../utils/Constents';
 
 function Comment({data}) {
     const { name, text, time, likes, reply, disLikes } = data;
-    console.log(data);
     
   return (
     <div>

@@ -12,3 +12,5 @@ export const LIKE_ICON = "https://img.icons8.com/?size=100&id=24816&format=png&c
 export const DISLIKE_ICON = 'https://static.vecteezy.com/system/resources/thumbnails/021/013/463/small_2x/dislike-icon-on-transparent-background-free-png.png';
 
 export const BELL_ICON = 'https://cdn-icons-png.flaticon.com/128/3239/3239952.png';
+
+export const LIVE_CHAT_COUNT = 25;
