@@ -32,7 +32,7 @@ const appRouter = createBrowserRouter([{
 const App = () => {
     return(
         <Provider store={store}>
-            <div>
+            <div >
                 <Head />
                 <RouterProvider router={appRouter}/>
             </div>

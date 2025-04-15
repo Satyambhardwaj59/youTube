@@ -59,7 +59,7 @@ const Head = () => {
         
             <img onClick={() => toggelMenuHandler()} className='h-8 mr-4 cursor-pointer' src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/640px-Hamburger_icon.svg.png" alt="menu" />
             <img className='h-8' src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Logo_of_YouTube_%282015-2017%29.svg/2560px-Logo_of_YouTube_%282015-2017%29.svg.png" alt="youtube-logo" />
-        
+       
         </div>
         <div className='col-span-9 flex flex-col place-content-center'>
           <div className='flex justify-center'>
